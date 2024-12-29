@@ -8,8 +8,8 @@ function Header() {
             <Link to="/" className=" text-xl text-gray-900 hover:text-gray-400">Logo</Link>
             <ul className=" flex space-x-8 text-gray-900">
                 <Link to="/" className="hover:text-gray-400">Home</Link>
-                <Link to="/about" className="hover:text-gray-400">About</Link>
                 <Link to="products" className="hover:text-gray-400">Products</Link>
+                <Link to="/about" className="hover:text-gray-400">About</Link>
                 <Link to="/contact" className="hover:text-gray-400">Contact</Link>
             </ul>
             <div className="relative">

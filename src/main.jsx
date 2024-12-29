@@ -11,29 +11,35 @@ import Product from './pages/Product.jsx'
 
 const routerProvider = createBrowserRouter([
   {
-    path: '/',
-    element: <App />
-  },
-  {
-    path: '/about',
-    element: <About />
-  },
-  {
-    path: '/cart',
-    element: <Cart />
-  },
-  {
-    path: '/products',
-    element: <Products />
-  },
-  {
-    path: '/contact',
-    element: <Contact />
-  },
-  {
-    path: '/product-detail/:id',
-    element: <Product />
-  }
+		path: "/",
+		element: <App />,
+		children: [
+			{
+				index: true,
+				element: <Products />,
+			},
+			{
+				path: "/about",
+				element: <About />,
+			},
+			{
+				path: "/contact",
+				element: <Contact />,
+			},
+			{
+				path: "/cart",
+				element: <Cart />,
+			},
+			{
+				path: "/products",
+				element: <Products />,
+			},
+			{
+				path: "/product-details/:id",
+				element: <Product />,
+			},
+		],
+	},
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
