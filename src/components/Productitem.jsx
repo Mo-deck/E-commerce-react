@@ -3,10 +3,11 @@ import React from 'react'
 const Productitem = ({product}) => {
   return (
     <div className="border boder-lg overflow-hidden shadow-sm hover:shadow-lg transition duration-200 ease-in">
-    <img className="w-full h-48 object-cover" src={product.image} alt={product.title} />
+    
+    <img className="w-full h-48 object-cover mt-4" src={product.image} alt={product.name} />
 
     <div className="p-4">
-        <h2 className="font-bold text-xl mb-2">{product.name}</h2>
+        <h2 className="font-bold text-xl mb-2">{product.title}</h2>
         <p className="text-gray-600 mb-4 truncate">{product.description}</p>
         <div className="flex justify-between items-center">
             <span className="text-blue-600 font-semibold">${product.price.toFixed()}</span>
