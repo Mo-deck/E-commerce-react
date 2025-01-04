@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Productitem() {
+const Productitem = ({product}) => {
   return (
     <div className="border boder-lg overflow-hidden shadow-sm hover:shadow-lg transition duration-200 ease-in">
-    <img className="w-full h-48 object-cover" src={product.image} alt={product.name} />
+    <img className="w-full h-48 object-cover" src={product.image} alt={product.title} />
 
     <div className="p-4">
         <h2 className="font-bold text-xl mb-2">{product.name}</h2>
