@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Productitem = ({product}) => {
   return (
-    <div className="border boder-lg overflow-hidden shadow-sm hover:shadow-lg transition duration-200 ease-in">
+    <Link  to={`/product-details/${product.id}`}
+     className="border boder-lg overflow-hidden shadow-sm hover:shadow-lg transition duration-200 ease-in">
     
     <img className="w-full h-48 object-cover mt-4" src={product.image} alt={product.name} />
 
@@ -22,7 +24,7 @@ const Productitem = ({product}) => {
             </span>
         </div>
     </div>
-</div>
+</Link>
   )
 }
 
