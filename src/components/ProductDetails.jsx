@@ -27,8 +27,12 @@ function ProductDetails() {
            <img className="w-full h-96 object-cover rounded-lg shadow-md"
             src={product.image} alt={product.title} /> 
         </div>
-        <div className="">
-
+        <div className="md:w-1/2 pl-4">
+          <p className="text-gray-600 mb-4">{product.description}</p>
+          <div className="flex justify-between items-center mb-4">
+             <span className="text-pink-600 text-2xl font-semibold">${product.price.toFixed()}</span>
+             <span className="text-gray-500">{product.stock > 0 ? `${product.stock} in stock`: "out of Stock"}</span>
+          </div>
         </div>
     </div>
    </div>
