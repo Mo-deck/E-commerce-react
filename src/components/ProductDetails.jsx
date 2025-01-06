@@ -33,6 +33,7 @@ function ProductDetails() {
              <span className="text-pink-600 text-2xl font-semibold">${product.price.toFixed()}</span>
              <span className="text-gray-500">{product.stock > 0 ? `${product.stock} in stock`: "out of Stock"}</span>
           </div>
+          <button className="bg-pink-600 text-white px-5 rounded-lg py-2 shadow hover:bg-pink-700 transition-colors duration-200">Add To Cart</button>
         </div>
     </div>
    </div>
